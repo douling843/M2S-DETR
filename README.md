@@ -23,17 +23,17 @@
 
 1.安装PaddlePaddle
 
-# CUDA10.2
+ CUDA10.2
 `python -m pip install paddlepaddle-gpu==2.3.2 -i https://pypi.tuna.tsinghua.edu.cn/simple`
 
-# CPU
+ CPU
 `python -m pip install paddlepaddle==2.3.2 -i https://pypi.tuna.tsinghua.edu.cn/simple`
 
-# 在您的Python解释器中确认PaddlePaddle安装成功
+ 在您的Python解释器中确认PaddlePaddle安装成功
 >>> import paddle
 >>> paddle.utils.run_check()
 
-# 确认PaddlePaddle版本
+ 确认PaddlePaddle版本
 python -c "import paddle; print(paddle.__version__)"
 
 
@@ -41,13 +41,17 @@ python -c "import paddle; print(paddle.__version__)"
 注意： pip安装方式只支持Python3
 
 
-# 克隆PaddleDetection仓库
+ 克隆仓库
 `cd <path/to/clone/M2S-DETR>`
 `git clone https://github.com/douling843/M2S-DETR.git`
 
-# 安装其他依赖
+ 安装其他依赖
 `cd M2S-DETR`
 `pip install -r requirements.txt`
 
-# 编译安装
+ 编译安装
 `python setup.py install`
+
+## Acknowledgement  📫
+
+This repository is based on [PaddleDetection](https://github.com/PaddlePaddle/PaddleDetection/tree/release/2.8.1))  👯.
