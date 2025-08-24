@@ -1,2 +1,4 @@
 # M2S-DETR
-This repository contains the code for the M2S-DETR model, currently under review for publication.
+
+![image text](https://github.com/douling843/M2S-DETR/blob/main/fig1.jpg)  
+
