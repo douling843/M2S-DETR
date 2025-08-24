@@ -1,0 +1,9 @@
+_BASE_: [
+  '../datasets/ssdd_hbb_coco.yml',
+  '../runtime.yml',
+  '_base_/optimizer_1x.yml',     #epoch: 500
+  '_base_/detr_r50.yml',
+  '_base_/detr_reader.yml',
+]
+weights: output/detr_r50_1x_coco/model_final
+find_unused_parameters: True
