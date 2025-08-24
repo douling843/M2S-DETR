@@ -12,3 +12,13 @@
 
 
 ## Installation  <img src="fig2/Installation.svg" width="4%">
+环境要求：
+- <span> PaddlePaddle 2.3.2
+- <span> OS 64位操作系统
+- <span> Python 3(3.5.1+/3.6/3.7/3.8/3.9/3.10)，64位版本
+- <span> pip/pip3(9.0.1+)，64位版本
+- <span> CUDA >= 10.2
+- <span> cuDNN >= 7.6
+
+
+
