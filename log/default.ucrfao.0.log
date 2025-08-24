@@ -1,0 +1,47 @@
+/opt/conda/envs/paddle_env/lib/python3.7/site-packages/pkg_resources/__init__.py:121: DeprecationWarning: pkg_resources is deprecated as an API
+  warnings.warn("pkg_resources is deprecated as an API", DeprecationWarning)
+/opt/conda/envs/paddle_env/lib/python3.7/site-packages/pkg_resources/__init__.py:2870: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('mpl_toolkits')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/opt/conda/envs/paddle_env/lib/python3.7/site-packages/pkg_resources/__init__.py:2870: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/opt/conda/envs/paddle_env/lib/python3.7/site-packages/pkg_resources/__init__.py:2870: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('zope')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+WARNING: OMP_NUM_THREADS set to 32, not 1. The computation speed will not be optimized if you use data parallel. It will fail if this PaddlePaddle binary is compiled with OpenBlas since OpenBlas does not support multi-threads.
+PLEASE USE OMP_NUM_THREADS WISELY.
+loading annotations into memory...
+Done (t=0.14s)
+creating index...
+index created!
+[08/02 02:31:20] ppdet.data.source.coco INFO: Load [928 samples valid, 0 samples invalid] in file dataset/ssdd_hbb/coco_style/annotations/train.json.
+W0802 02:31:20.085630 1050245 gpu_resources.cc:61] Please NOTE: device: 0, GPU Compute Capability: 7.5, Driver API Version: 11.7, Runtime API Version: 11.6
+W0802 02:31:20.098577 1050245 gpu_resources.cc:91] device: 0, cuDNN Version: 8.4.
+[08/02 02:31:22] ppdet.utils.checkpoint INFO: ['fc.bias', 'fc.weight', 'last_conv.weight'] in pretrained weight is not used in the model, and its will not be loaded
+[08/02 02:31:23] ppdet.utils.checkpoint INFO: Finish loading model weights: /root/.cache/paddle/weights/PPHGNetV2_X_ssld_pretrained.pdparams
+[08/02 02:31:24] ppdet.engine INFO: Epoch: [0] [  0/464] learning_rate: 0.000000 loss_class: 0.010668 loss_bbox: 1.712435 loss_giou: 3.193869 loss_class_aux: 0.061871 loss_bbox_aux: 10.274613 loss_giou_aux: 19.163212 loss_class_dn: 0.549235 loss_bbox_dn: 0.379876 loss_giou_dn: 1.388159 loss_class_aux_dn: 3.673774 loss_bbox_aux_dn: 1.899382 loss_giou_aux_dn: 6.940796 loss: 49.247894 eta: 14:19:36 batch_cost: 1.5439 data_cost: 0.0004 ips: 1.2955 images/s
+[08/02 02:33:05] ppdet.engine INFO: Epoch: [0] [200/464] learning_rate: 0.000010 loss_class: 0.023907 loss_bbox: 1.243553 loss_giou: 2.641731 loss_class_aux: 0.112058 loss_bbox_aux: 7.680970 loss_giou_aux: 15.820029 loss_class_dn: 0.377831 loss_bbox_dn: 0.433428 loss_giou_dn: 1.365101 loss_class_aux_dn: 1.927243 loss_bbox_aux_dn: 2.179999 loss_giou_aux_dn: 6.856794 loss: 41.828842 eta: 4:05:52 batch_cost: 0.4387 data_cost: 0.0002 ips: 4.5584 images/s
+[08/02 02:34:47] ppdet.engine INFO: Epoch: [0] [400/464] learning_rate: 0.000020 loss_class: 0.289306 loss_bbox: 0.567235 loss_giou: 1.487871 loss_class_aux: 1.527066 loss_bbox_aux: 3.727671 loss_giou_aux: 9.301030 loss_class_dn: 0.397958 loss_bbox_dn: 0.347563 loss_giou_dn: 1.203667 loss_class_aux_dn: 1.802577 loss_bbox_aux_dn: 1.812471 loss_giou_aux_dn: 6.233244 loss: 28.785400 eta: 4:03:41 batch_cost: 0.4417 data_cost: 0.0002 ips: 4.5281 images/s
+[08/02 02:35:21] ppdet.utils.checkpoint INFO: Save checkpoint: output/rtdetr_hgnetv2_x_6x_0_layerchannel_chengvdl_r16_coco_ssdd
+[08/02 02:35:22] ppdet.engine INFO: Epoch: [1] [  0/464] learning_rate: 0.000023 loss_class: 0.384578 loss_bbox: 0.515826 loss_giou: 1.352937 loss_class_aux: 1.933731 loss_bbox_aux: 3.424070 loss_giou_aux: 8.573248 loss_class_dn: 0.434365 loss_bbox_dn: 0.348313 loss_giou_dn: 1.155860 loss_class_aux_dn: 1.888366 loss_bbox_aux_dn: 1.812471 loss_giou_aux_dn: 5.973288 loss: 27.922459 eta: 4:03:10 batch_cost: 0.4421 data_cost: 0.0002 ips: 4.5237 images/s
+[08/02 02:37:04] ppdet.engine INFO: Epoch: [1] [200/464] learning_rate: 0.000033 loss_class: 0.794297 loss_bbox: 0.256631 loss_giou: 0.863502 loss_class_aux: 3.386238 loss_bbox_aux: 2.093895 loss_giou_aux: 6.348819 loss_class_dn: 0.530879 loss_bbox_dn: 0.282344 loss_giou_dn: 0.912143 loss_class_aux_dn: 2.039346 loss_bbox_aux_dn: 1.606113 loss_giou_aux_dn: 5.188697 loss: 25.222704 eta: 4:01:38 batch_cost: 0.4426 data_cost: 0.0002 ips: 4.5192 images/s
+[08/02 02:38:46] ppdet.engine INFO: Epoch: [1] [400/464] learning_rate: 0.000043 loss_class: 0.818925 loss_bbox: 0.153276 loss_giou: 0.652920 loss_class_aux: 3.716358 loss_bbox_aux: 1.483883 loss_giou_aux: 5.247959 loss_class_dn: 0.505724 loss_bbox_dn: 0.201956 loss_giou_dn: 0.772357 loss_class_aux_dn: 2.118297 loss_bbox_aux_dn: 1.273188 loss_giou_aux_dn: 4.540314 loss: 22.046885 eta: 4:00:14 batch_cost: 0.4433 data_cost: 0.0002 ips: 4.5114 images/s
+[08/02 02:39:21] ppdet.utils.checkpoint INFO: Save checkpoint: output/rtdetr_hgnetv2_x_6x_0_layerchannel_chengvdl_r16_coco_ssdd
+[08/02 02:39:22] ppdet.engine INFO: Epoch: [2] [  0/464] learning_rate: 0.000046 loss_class: 0.777596 loss_bbox: 0.147598 loss_giou: 0.607550 loss_class_aux: 3.730950 loss_bbox_aux: 1.444490 loss_giou_aux: 5.003016 loss_class_dn: 0.493108 loss_bbox_dn: 0.187199 loss_giou_dn: 0.716632 loss_class_aux_dn: 2.124636 loss_bbox_aux_dn: 1.189645 loss_giou_aux_dn: 4.383703 loss: 21.438725 eta: 3:59:45 batch_cost: 0.4423 data_cost: 0.0002 ips: 4.5216 images/s
+[08/02 02:41:04] ppdet.engine INFO: Epoch: [2] [200/464] learning_rate: 0.000056 loss_class: 0.730690 loss_bbox: 0.126993 loss_giou: 0.555282 loss_class_aux: 4.027649 loss_bbox_aux: 1.216649 loss_giou_aux: 4.334911 loss_class_dn: 0.481465 loss_bbox_dn: 0.176597 loss_giou_dn: 0.645832 loss_class_aux_dn: 2.202345 loss_bbox_aux_dn: 1.006276 loss_giou_aux_dn: 3.896884 loss: 20.178082 eta: 3:58:26 batch_cost: 0.4444 data_cost: 0.0002 ips: 4.5000 images/s
+
+
+--------------------------------------
+C++ Traceback (most recent call last):
+--------------------------------------
+0   paddle::imperative::BasicEngine::Execute()
+1   paddle::imperative::BasicEngine::PrepareDeps()
+
+----------------------
+Error Message Summary:
+----------------------
+FatalError: `Termination signal` is detected by the operating system.
+  [TimeInfo: *** Aborted at 1690944135 (unix time) try "date -d @1690944135" if you are using GNU date ***]
+  [SignalInfo: *** SIGTERM (@0x100638) received by PID 1050245 (TID 0x7fe9713c55c0) from PID 1050168 ***]
+

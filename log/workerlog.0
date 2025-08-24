@@ -1,0 +1,283 @@
+/opt/conda/envs/paddle_env/lib/python3.7/site-packages/pkg_resources/__init__.py:121: DeprecationWarning: pkg_resources is deprecated as an API
+  warnings.warn("pkg_resources is deprecated as an API", DeprecationWarning)
+/opt/conda/envs/paddle_env/lib/python3.7/site-packages/pkg_resources/__init__.py:2870: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('mpl_toolkits')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/opt/conda/envs/paddle_env/lib/python3.7/site-packages/pkg_resources/__init__.py:2870: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/opt/conda/envs/paddle_env/lib/python3.7/site-packages/pkg_resources/__init__.py:2870: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('zope')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+WARNING: OMP_NUM_THREADS set to 32, not 1. The computation speed will not be optimized if you use data parallel. It will fail if this PaddlePaddle binary is compiled with OpenBlas since OpenBlas does not support multi-threads.
+PLEASE USE OMP_NUM_THREADS WISELY.
+I0804 12:48:01.021361 1136639 nccl_context.cc:83] init nccl context nranks: 2 local rank: 0 gpu id: 0 ring id: 0
+W0804 12:48:01.347123 1136639 gpu_resources.cc:61] Please NOTE: device: 0, GPU Compute Capability: 7.5, Driver API Version: 11.7, Runtime API Version: 11.6
+W0804 12:48:01.352843 1136639 gpu_resources.cc:91] device: 0, cuDNN Version: 8.4.
+loading annotations into memory...
+Done (t=0.09s)
+creating index...
+index created!
+[08/04 12:48:01] ppdet.data.source.coco INFO: Load [928 samples valid, 0 samples invalid] in file dataset/ssdd_hbb/coco_style/annotations/train.json.
+[08/04 12:48:03] ppdet.utils.checkpoint INFO: ['fc.bias', 'fc.weight', 'last_conv.weight'] in pretrained weight is not used in the model, and its will not be loaded
+[08/04 12:48:04] ppdet.utils.checkpoint INFO: Finish loading model weights: /root/.cache/paddle/weights/PPHGNetV2_X_ssld_pretrained.pdparams
+[08/04 12:48:05] ppdet.engine INFO: Epoch: [0] [  0/232] learning_rate: 0.000000 loss_class: 0.250668 loss_bbox: 0.660477 loss_giou: 2.150456 loss_class_aux: 1.223418 loss_bbox_aux: 4.470859 loss_giou_aux: 12.463649 loss_class_dn: 0.669168 loss_bbox_dn: 0.383219 loss_giou_dn: 1.387693 loss_class_aux_dn: 3.899510 loss_bbox_aux_dn: 1.916094 loss_giou_aux_dn: 6.938465 loss: 36.413673 eta: 6:54:25 batch_cost: 1.4886 data_cost: 0.0006 ips: 1.3435 images/s
+[08/04 12:50:11] ppdet.engine INFO: Epoch: [0] [200/232] learning_rate: 0.000010 loss_class: 0.241991 loss_bbox: 0.640725 loss_giou: 1.683919 loss_class_aux: 1.409826 loss_bbox_aux: 3.945884 loss_giou_aux: 10.020631 loss_class_dn: 0.478812 loss_bbox_dn: 0.419831 loss_giou_dn: 1.375049 loss_class_aux_dn: 2.468132 loss_bbox_aux_dn: 2.109245 loss_giou_aux_dn: 6.893076 loss: 34.534378 eta: 2:36:11 batch_cost: 0.5633 data_cost: 0.0004 ips: 3.5508 images/s
+[08/04 12:50:42] ppdet.utils.checkpoint INFO: Save checkpoint: output/rtdetr_hgnetv2_x_6x_0_layerchannel_avg_cheng_r16_coco_ssdd
+loading annotations into memory...
+Done (t=0.02s)
+creating index...
+index created!
+[08/04 12:50:42] ppdet.data.source.coco INFO: Load [232 samples valid, 0 samples invalid] in file dataset/ssdd_hbb/coco_style/annotations/test.json.
+loading annotations into memory...
+Done (t=0.01s)
+creating index...
+index created!
+[08/04 12:50:42] ppdet.engine INFO: Eval iter: 0
+[08/04 12:50:53] ppdet.engine INFO: Eval iter: 100
+[08/04 12:51:04] ppdet.engine INFO: Eval iter: 200
+[08/04 12:51:09] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.02s)
+creating index...
+index created!
+[08/04 12:51:09] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.56s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=1.24s).
+Accumulating evaluation results...
+DONE (t=0.15s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.006
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.034
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.008
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.012
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.038
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.073
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.095
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.004
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.000
+[08/04 12:51:11] ppdet.engine INFO: Total sample number: 232, average FPS: 9.026441070973807
+[08/04 12:51:11] ppdet.engine INFO: Best test bbox ap is 0.006.
+[08/04 12:51:21] ppdet.utils.checkpoint INFO: Save checkpoint: output/rtdetr_hgnetv2_x_6x_0_layerchannel_avg_cheng_r16_coco_ssdd
+[08/04 12:51:22] ppdet.engine INFO: Epoch: [1] [  0/232] learning_rate: 0.000012 loss_class: 0.245664 loss_bbox: 0.599957 loss_giou: 1.594125 loss_class_aux: 1.443389 loss_bbox_aux: 3.723889 loss_giou_aux: 9.653468 loss_class_dn: 0.441015 loss_bbox_dn: 0.419831 loss_giou_dn: 1.359278 loss_class_aux_dn: 2.146659 loss_bbox_aux_dn: 2.109245 loss_giou_aux_dn: 6.804196 loss: 33.570122 eta: 2:35:46 batch_cost: 0.5634 data_cost: 0.0004 ips: 3.5498 images/s
+[08/04 12:53:30] ppdet.engine INFO: Epoch: [1] [200/232] learning_rate: 0.000022 loss_class: 0.405525 loss_bbox: 0.385618 loss_giou: 1.224921 loss_class_aux: 1.972261 loss_bbox_aux: 2.439968 loss_giou_aux: 7.954222 loss_class_dn: 0.460255 loss_bbox_dn: 0.314022 loss_giou_dn: 1.174574 loss_class_aux_dn: 1.947985 loss_bbox_aux_dn: 1.648450 loss_giou_aux_dn: 6.039680 loss: 28.823700 eta: 2:34:23 batch_cost: 0.5714 data_cost: 0.0004 ips: 3.5001 images/s
+
+
+--------------------------------------
+C++ Traceback (most recent call last):
+--------------------------------------
+0   bvar::detail::SamplerCollector::sampling_thread(void*)
+1   bvar::detail::SamplerCollector::run()
+
+----------------------
+Error Message Summary:
+----------------------
+FatalError: `Termination signal` is detected by the operating system.
+  [TimeInfo: *** Aborted at 1691153636 (unix time) try "date -d @1691153636" if you are using GNU date ***]
+  [SignalInfo: *** SIGTERM (@0x1157b0) received by PID 1136639 (TID 0x7f90747ef700) from PID 1136560 ***]
+
+Exception in thread Thread-5:
+Traceback (most recent call last):
+  File "/opt/conda/envs/paddle_env/lib/python3.7/site-packages/paddle/fluid/dataloader/dataloader_iter.py", line 620, in _get_data
+    data = self._data_queue.get(timeout=self._timeout)
+  File "/opt/conda/envs/paddle_env/lib/python3.7/multiprocessing/queues.py", line 105, in get
+    raise Empty
+_queue.Empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda/envs/paddle_env/lib/python3.7/threading.py", line 926, in _bootstrap_inner
+    self.run()
+  File "/opt/conda/envs/paddle_env/lib/python3.7/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "/opt/conda/envs/paddle_env/lib/python3.7/site-packages/paddle/fluid/dataloader/dataloader_iter.py", line 534, in _thread_loop
+    batch = self._get_data()
+  File "/opt/conda/envs/paddle_env/lib/python3.7/site-packages/paddle/fluid/dataloader/dataloader_iter.py", line 636, in _get_data
+    "pids: {}".format(len(failed_workers), pids))
+RuntimeError: DataLoader 2 workers exit unexpectedly, pids: 1179893, 1179966
+
+/opt/conda/envs/paddle_env/lib/python3.7/site-packages/pkg_resources/__init__.py:121: DeprecationWarning: pkg_resources is deprecated as an API
+  warnings.warn("pkg_resources is deprecated as an API", DeprecationWarning)
+/opt/conda/envs/paddle_env/lib/python3.7/site-packages/pkg_resources/__init__.py:2870: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('mpl_toolkits')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/opt/conda/envs/paddle_env/lib/python3.7/site-packages/pkg_resources/__init__.py:2870: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/opt/conda/envs/paddle_env/lib/python3.7/site-packages/pkg_resources/__init__.py:2870: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('zope')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+WARNING: OMP_NUM_THREADS set to 32, not 1. The computation speed will not be optimized if you use data parallel. It will fail if this PaddlePaddle binary is compiled with OpenBlas since OpenBlas does not support multi-threads.
+PLEASE USE OMP_NUM_THREADS WISELY.
+I0804 12:56:31.482333 1180587 nccl_context.cc:83] init nccl context nranks: 2 local rank: 0 gpu id: 0 ring id: 0
+W0804 12:56:31.788379 1180587 gpu_resources.cc:61] Please NOTE: device: 0, GPU Compute Capability: 7.5, Driver API Version: 11.7, Runtime API Version: 11.6
+W0804 12:56:31.793900 1180587 gpu_resources.cc:91] device: 0, cuDNN Version: 8.4.
+loading annotations into memory...
+Done (t=0.09s)
+creating index...
+index created!
+[08/04 12:56:32] ppdet.data.source.coco INFO: Load [928 samples valid, 0 samples invalid] in file dataset/ssdd_hbb/coco_style/annotations/train.json.
+[08/04 12:56:34] ppdet.utils.checkpoint INFO: ['fc.bias', 'fc.weight', 'last_conv.weight'] in pretrained weight is not used in the model, and its will not be loaded
+[08/04 12:56:34] ppdet.utils.checkpoint INFO: Finish loading model weights: /root/.cache/paddle/weights/PPHGNetV2_X_ssld_pretrained.pdparams
+[08/04 12:56:36] ppdet.engine INFO: Epoch: [0] [  0/232] learning_rate: 0.000000 loss_class: 0.262236 loss_bbox: 0.675792 loss_giou: 1.945275 loss_class_aux: 1.541360 loss_bbox_aux: 4.123811 loss_giou_aux: 11.826965 loss_class_dn: 0.765576 loss_bbox_dn: 0.411375 loss_giou_dn: 1.387269 loss_class_aux_dn: 4.008343 loss_bbox_aux_dn: 2.056874 loss_giou_aux_dn: 6.936344 loss: 35.941219 eta: 7:47:14 batch_cost: 1.6783 data_cost: 0.0004 ips: 1.1917 images/s
+[08/04 12:58:42] ppdet.engine INFO: Epoch: [0] [200/232] learning_rate: 0.000010 loss_class: 0.189777 loss_bbox: 0.759386 loss_giou: 1.742204 loss_class_aux: 1.116853 loss_bbox_aux: 4.674160 loss_giou_aux: 10.620307 loss_class_dn: 0.464524 loss_bbox_dn: 0.405162 loss_giou_dn: 1.360152 loss_class_aux_dn: 2.460773 loss_bbox_aux_dn: 2.033278 loss_giou_aux_dn: 6.861925 loss: 35.119965 eta: 2:37:05 batch_cost: 0.5656 data_cost: 0.0004 ips: 3.5364 images/s
+[08/04 12:59:14] ppdet.utils.checkpoint INFO: Save checkpoint: output/rtdetr_hgnetv2_x_6x_0_layerchannel_avg_cheng_r16_coco_ssdd
+loading annotations into memory...
+Done (t=0.02s)
+creating index...
+index created!
+[08/04 12:59:14] ppdet.data.source.coco INFO: Load [232 samples valid, 0 samples invalid] in file dataset/ssdd_hbb/coco_style/annotations/test.json.
+loading annotations into memory...
+Done (t=0.01s)
+creating index...
+index created!
+[08/04 12:59:15] ppdet.engine INFO: Eval iter: 0
+[08/04 12:59:26] ppdet.engine INFO: Eval iter: 100
+[08/04 12:59:37] ppdet.engine INFO: Eval iter: 200
+[08/04 12:59:41] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.02s)
+creating index...
+index created!
+[08/04 12:59:41] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.56s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=1.27s).
+Accumulating evaluation results...
+DONE (t=0.14s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.010
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.055
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.001
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.014
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.016
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.052
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.098
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.125
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.009
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.000
+[08/04 12:59:43] ppdet.engine INFO: Total sample number: 232, average FPS: 8.945553618387132
+[08/04 12:59:43] ppdet.engine INFO: Best test bbox ap is 0.010.
+[08/04 12:59:55] ppdet.utils.checkpoint INFO: Save checkpoint: output/rtdetr_hgnetv2_x_6x_0_layerchannel_avg_cheng_r16_coco_ssdd
+[08/04 12:59:56] ppdet.engine INFO: Epoch: [1] [  0/232] learning_rate: 0.000012 loss_class: 0.229673 loss_bbox: 0.701695 loss_giou: 1.590214 loss_class_aux: 1.246629 loss_bbox_aux: 4.333965 loss_giou_aux: 9.852423 loss_class_dn: 0.420117 loss_bbox_dn: 0.405162 loss_giou_dn: 1.351558 loss_class_aux_dn: 2.061017 loss_bbox_aux_dn: 2.043731 loss_giou_aux_dn: 6.754096 loss: 33.254204 eta: 2:36:33 batch_cost: 0.5654 data_cost: 0.0004 ips: 3.5376 images/s
+[08/04 13:02:03] ppdet.engine INFO: Epoch: [1] [200/232] learning_rate: 0.000022 loss_class: 0.432172 loss_bbox: 0.365773 loss_giou: 1.214434 loss_class_aux: 2.105659 loss_bbox_aux: 2.379233 loss_giou_aux: 7.704117 loss_class_dn: 0.448983 loss_bbox_dn: 0.317019 loss_giou_dn: 1.172995 loss_class_aux_dn: 1.948325 loss_bbox_aux_dn: 1.667816 loss_giou_aux_dn: 6.116636 loss: 28.650925 eta: 2:34:39 batch_cost: 0.5704 data_cost: 0.0003 ips: 3.5065 images/s
+[08/04 13:02:33] ppdet.utils.checkpoint INFO: Save checkpoint: output/rtdetr_hgnetv2_x_6x_0_layerchannel_avg_cheng_r16_coco_ssdd
+[08/04 13:02:33] ppdet.engine INFO: Eval iter: 0
+[08/04 13:02:44] ppdet.engine INFO: Eval iter: 100
+[08/04 13:02:55] ppdet.engine INFO: Eval iter: 200
+[08/04 13:02:59] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.02s)
+creating index...
+index created!
+[08/04 13:02:59] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.45s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=1.24s).
+Accumulating evaluation results...
+DONE (t=0.15s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.037
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.099
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.018
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.050
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.001
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.078
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.182
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.292
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.365
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.059
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.000
+[08/04 13:03:01] ppdet.engine INFO: Total sample number: 232, average FPS: 9.007715091690955
+[08/04 13:03:01] ppdet.engine INFO: Best test bbox ap is 0.037.
+[08/04 13:03:11] ppdet.utils.checkpoint INFO: Save checkpoint: output/rtdetr_hgnetv2_x_6x_0_layerchannel_avg_cheng_r16_coco_ssdd
+[08/04 13:03:12] ppdet.engine INFO: Epoch: [2] [  0/232] learning_rate: 0.000023 loss_class: 0.473024 loss_bbox: 0.353389 loss_giou: 1.148338 loss_class_aux: 2.375927 loss_bbox_aux: 2.308162 loss_giou_aux: 7.489240 loss_class_dn: 0.455541 loss_bbox_dn: 0.310279 loss_giou_dn: 1.163147 loss_class_aux_dn: 1.949933 loss_bbox_aux_dn: 1.643311 loss_giou_aux_dn: 6.059011 loss: 28.501194 eta: 2:34:22 batch_cost: 0.5702 data_cost: 0.0003 ips: 3.5074 images/s
+[08/04 13:05:20] ppdet.engine INFO: Epoch: [2] [200/232] learning_rate: 0.000033 loss_class: 0.693294 loss_bbox: 0.225267 loss_giou: 0.843001 loss_class_aux: 2.850405 loss_bbox_aux: 2.050621 loss_giou_aux: 6.558612 loss_class_dn: 0.505089 loss_bbox_dn: 0.241737 loss_giou_dn: 0.899812 loss_class_aux_dn: 2.043320 loss_bbox_aux_dn: 1.385267 loss_giou_aux_dn: 5.077019 loss: 25.885471 eta: 2:32:36 batch_cost: 0.5719 data_cost: 0.0003 ips: 3.4973 images/s
+[08/04 13:05:51] ppdet.utils.checkpoint INFO: Save checkpoint: output/rtdetr_hgnetv2_x_6x_0_layerchannel_avg_cheng_r16_coco_ssdd
+[08/04 13:05:51] ppdet.engine INFO: Eval iter: 0
+[08/04 13:06:02] ppdet.engine INFO: Eval iter: 100
+[08/04 13:06:13] ppdet.engine INFO: Eval iter: 200
+[08/04 13:06:18] ppdet.metrics.metrics INFO: The bbox result is saved to bbox.json.
+loading annotations into memory...
+Done (t=0.07s)
+creating index...
+index created!
+[08/04 13:06:18] ppdet.metrics.coco_utils INFO: Start evaluate...
+Loading and preparing results...
+DONE (t=0.46s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=1.19s).
+Accumulating evaluation results...
+DONE (t=0.15s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.141
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.356
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.076
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.175
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.063
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.007
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.149
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.350
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.530
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = 0.537
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.512
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.250
+[08/04 13:06:19] ppdet.engine INFO: Total sample number: 232, average FPS: 8.890210783043127
+[08/04 13:06:20] ppdet.engine INFO: Best test bbox ap is 0.141.
+
+
+--------------------------------------
+C++ Traceback (most recent call last):
+--------------------------------------
+0   bvar::detail::SamplerCollector::sampling_thread(void*)
+1   bvar::detail::SamplerCollector::run()
+
+----------------------
+Error Message Summary:
+----------------------
+FatalError: `Termination signal` is detected by the operating system.
+  [TimeInfo: *** Aborted at 1691154391 (unix time) try "date -d @1691154391" if you are using GNU date ***]
+  [SignalInfo: *** SIGTERM (@0x120359) received by PID 1180587 (TID 0x7fb95d6ac700) from PID 1180505 ***]
+
+Traceback (most recent call last):
+  File "tools/train.py", line 204, in <module>
+    main()
+  File "tools/train.py", line 200, in main
+    run(FLAGS, cfg)
+  File "tools/train.py", line 153, in run
+    trainer.train(FLAGS.eval)
+  File "/workspace/PaddleDetection/ppdet/engine/trainer.py", line 604, in train
+    self._eval_with_loader(self._eval_loader)
+  File "/workspace/PaddleDetection/ppdet/engine/trainer.py", line 657, in _eval_with_loader
+    self._compose_callback.on_epoch_end(self.status)
+  File "/workspace/PaddleDetection/ppdet/engine/callbacks.py", line 86, in on_epoch_end
+    c.on_epoch_end(status)
+  File "/workspace/PaddleDetection/ppdet/engine/callbacks.py", line 222, in on_epoch_end
+    ema_model=weight)
+  File "/workspace/PaddleDetection/ppdet/utils/checkpoint.py", line 324, in save_model
+    paddle.save(state_dict, save_path + ".pdopt")
+  File "/opt/conda/envs/paddle_env/lib/python3.7/site-packages/paddle/framework/io.py", line 737, in save
+    _pickle_save(obj, f, protocol)
+  File "/opt/conda/envs/paddle_env/lib/python3.7/site-packages/paddle/fluid/multiprocess_utils.py", line 134, in __handler__
+    core._throw_error_if_process_failed()
+SystemError: (Fatal) DataLoader process (pid 1244489) exited is killed by signal: Terminated. (at /paddle/paddle/fluid/imperative/data_loader.cc:181)
+

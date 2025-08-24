@@ -1,0 +1,80 @@
+/opt/conda/envs/paddle_env/lib/python3.7/site-packages/pkg_resources/__init__.py:121: DeprecationWarning: pkg_resources is deprecated as an API
+  warnings.warn("pkg_resources is deprecated as an API", DeprecationWarning)
+/opt/conda/envs/paddle_env/lib/python3.7/site-packages/pkg_resources/__init__.py:2870: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('mpl_toolkits')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/opt/conda/envs/paddle_env/lib/python3.7/site-packages/pkg_resources/__init__.py:2870: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/opt/conda/envs/paddle_env/lib/python3.7/site-packages/pkg_resources/__init__.py:2870: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('zope')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+WARNING: OMP_NUM_THREADS set to 32, not 1. The computation speed will not be optimized if you use data parallel. It will fail if this PaddlePaddle binary is compiled with OpenBlas since OpenBlas does not support multi-threads.
+PLEASE USE OMP_NUM_THREADS WISELY.
+I0804 12:48:01.006686 1136644 gen_comm_id_helper.cc:205] Server listening on: 127.0.0.1:57647 successful.
+I0804 12:48:01.021387 1136644 nccl_context.cc:83] init nccl context nranks: 2 local rank: 1 gpu id: 1 ring id: 0
+W0804 12:48:01.347167 1136644 gpu_resources.cc:61] Please NOTE: device: 1, GPU Compute Capability: 7.5, Driver API Version: 11.7, Runtime API Version: 11.6
+W0804 12:48:01.352846 1136644 gpu_resources.cc:91] device: 1, cuDNN Version: 8.4.
+loading annotations into memory...
+Done (t=0.09s)
+creating index...
+index created!
+
+
+--------------------------------------
+C++ Traceback (most recent call last):
+--------------------------------------
+0   paddle::imperative::Tracer::TraceOp(std::string const&, paddle::imperative::NameVarBaseMap const&, paddle::imperative::NameVarBaseMap const&, paddle::framework::AttributeMap, std::map<std::string, std::string, std::less<std::string >, std::allocator<std::pair<std::string const, std::string > > > const&)
+1   void paddle::imperative::Tracer::TraceOpImpl<paddle::imperative::VarBase>(std::string const&, paddle::imperative::details::NameVarMapTrait<paddle::imperative::VarBase>::Type const&, paddle::imperative::details::NameVarMapTrait<paddle::imperative::VarBase>::Type const&, paddle::framework::AttributeMap&, phi::Place const&, bool, std::map<std::string, std::string, std::less<std::string >, std::allocator<std::pair<std::string const, std::string > > > const&, paddle::framework::AttributeMap*, bool)
+2   paddle::imperative::PreparedOp::Run(paddle::imperative::NameVarBaseMap const&, paddle::imperative::NameVarBaseMap const&, paddle::framework::AttributeMap const&, paddle::framework::AttributeMap const&)
+3   std::_Function_handler<void (paddle::framework::ExecutionContext const&), paddle::framework::OpKernelRegistrarFunctor<phi::GPUPlace, false, 0ul, paddle::operators::SyncBatchNormKernel<paddle::platform::CUDADeviceContext, float>, paddle::operators::SyncBatchNormKernel<paddle::platform::CUDADeviceContext, double>, paddle::operators::SyncBatchNormKernel<paddle::platform::CUDADeviceContext, phi::dtype::float16> >::operator()(char const*, char const*, int) const::{lambda(paddle::framework::ExecutionContext const&)#1}>::_M_invoke(std::_Any_data const&, paddle::framework::ExecutionContext const&)
+4   paddle::operators::SyncBatchNormKernel<paddle::platform::CUDADeviceContext, float>::Compute(paddle::framework::ExecutionContext const&) const
+5   void paddle::operators::SyncBatchNormFunctor<paddle::platform::CUDADeviceContext, float>(paddle::framework::ExecutionContext const&, paddle::experimental::DataLayout, phi::DenseTensor const*, phi::DenseTensor*, phi::DenseTensor const*, phi::DenseTensor const*, phi::DenseTensor*, phi::DenseTensor*, phi::DenseTensor*, phi::DenseTensor*, double, float, bool, bool)
+
+----------------------
+Error Message Summary:
+----------------------
+FatalError: `Termination signal` is detected by the operating system.
+  [TimeInfo: *** Aborted at 1691153636 (unix time) try "date -d @1691153636" if you are using GNU date ***]
+  [SignalInfo: *** SIGTERM (@0x1157b0) received by PID 1136644 (TID 0x7f84541b85c0) from PID 1136560 ***]
+
+/opt/conda/envs/paddle_env/lib/python3.7/site-packages/pkg_resources/__init__.py:121: DeprecationWarning: pkg_resources is deprecated as an API
+  warnings.warn("pkg_resources is deprecated as an API", DeprecationWarning)
+/opt/conda/envs/paddle_env/lib/python3.7/site-packages/pkg_resources/__init__.py:2870: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('mpl_toolkits')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/opt/conda/envs/paddle_env/lib/python3.7/site-packages/pkg_resources/__init__.py:2870: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/opt/conda/envs/paddle_env/lib/python3.7/site-packages/pkg_resources/__init__.py:2870: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('zope')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+WARNING: OMP_NUM_THREADS set to 32, not 1. The computation speed will not be optimized if you use data parallel. It will fail if this PaddlePaddle binary is compiled with OpenBlas since OpenBlas does not support multi-threads.
+PLEASE USE OMP_NUM_THREADS WISELY.
+I0804 12:56:31.396709 1180592 gen_comm_id_helper.cc:205] Server listening on: 127.0.0.1:46241 successful.
+I0804 12:56:31.482343 1180592 nccl_context.cc:83] init nccl context nranks: 2 local rank: 1 gpu id: 1 ring id: 0
+W0804 12:56:31.788421 1180592 gpu_resources.cc:61] Please NOTE: device: 1, GPU Compute Capability: 7.5, Driver API Version: 11.7, Runtime API Version: 11.6
+W0804 12:56:31.793906 1180592 gpu_resources.cc:91] device: 1, cuDNN Version: 8.4.
+loading annotations into memory...
+Done (t=0.09s)
+creating index...
+index created!
+
+
+--------------------------------------
+C++ Traceback (most recent call last):
+--------------------------------------
+0   paddle::imperative::Tracer::TraceOp(std::string const&, paddle::imperative::NameVarBaseMap const&, paddle::imperative::NameVarBaseMap const&, paddle::framework::AttributeMap, std::map<std::string, std::string, std::less<std::string >, std::allocator<std::pair<std::string const, std::string > > > const&)
+1   void paddle::imperative::Tracer::TraceOpImpl<paddle::imperative::VarBase>(std::string const&, paddle::imperative::details::NameVarMapTrait<paddle::imperative::VarBase>::Type const&, paddle::imperative::details::NameVarMapTrait<paddle::imperative::VarBase>::Type const&, paddle::framework::AttributeMap&, phi::Place const&, bool, std::map<std::string, std::string, std::less<std::string >, std::allocator<std::pair<std::string const, std::string > > > const&, paddle::framework::AttributeMap*, bool)
+2   paddle::imperative::PreparedOp::Run(paddle::imperative::NameVarBaseMap const&, paddle::imperative::NameVarBaseMap const&, paddle::framework::AttributeMap const&, paddle::framework::AttributeMap const&)
+3   std::_Function_handler<void (paddle::framework::ExecutionContext const&), paddle::framework::OpKernelRegistrarFunctor<phi::GPUPlace, false, 0ul, paddle::operators::SyncBatchNormKernel<paddle::platform::CUDADeviceContext, float>, paddle::operators::SyncBatchNormKernel<paddle::platform::CUDADeviceContext, double>, paddle::operators::SyncBatchNormKernel<paddle::platform::CUDADeviceContext, phi::dtype::float16> >::operator()(char const*, char const*, int) const::{lambda(paddle::framework::ExecutionContext const&)#1}>::_M_invoke(std::_Any_data const&, paddle::framework::ExecutionContext const&)
+4   paddle::operators::SyncBatchNormKernel<paddle::platform::CUDADeviceContext, float>::Compute(paddle::framework::ExecutionContext const&) const
+5   void paddle::operators::SyncBatchNormFunctor<paddle::platform::CUDADeviceContext, float>(paddle::framework::ExecutionContext const&, paddle::experimental::DataLayout, phi::DenseTensor const*, phi::DenseTensor*, phi::DenseTensor const*, phi::DenseTensor const*, phi::DenseTensor*, phi::DenseTensor*, phi::DenseTensor*, phi::DenseTensor*, double, float, bool, bool)
+
+----------------------
+Error Message Summary:
+----------------------
+FatalError: `Termination signal` is detected by the operating system.
+  [TimeInfo: *** Aborted at 1691154391 (unix time) try "date -d @1691154391" if you are using GNU date ***]
+  [SignalInfo: *** SIGTERM (@0x120359) received by PID 1180592 (TID 0x7fd3c99025c0) from PID 1180505 ***]
+

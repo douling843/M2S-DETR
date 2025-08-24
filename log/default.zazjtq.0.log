@@ -1,0 +1,37 @@
+/opt/conda/envs/paddle_env/lib/python3.7/site-packages/pkg_resources/__init__.py:121: DeprecationWarning: pkg_resources is deprecated as an API
+  warnings.warn("pkg_resources is deprecated as an API", DeprecationWarning)
+/opt/conda/envs/paddle_env/lib/python3.7/site-packages/pkg_resources/__init__.py:2870: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('mpl_toolkits')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/opt/conda/envs/paddle_env/lib/python3.7/site-packages/pkg_resources/__init__.py:2870: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/opt/conda/envs/paddle_env/lib/python3.7/site-packages/pkg_resources/__init__.py:2870: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('zope')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+WARNING: OMP_NUM_THREADS set to 32, not 1. The computation speed will not be optimized if you use data parallel. It will fail if this PaddlePaddle binary is compiled with OpenBlas since OpenBlas does not support multi-threads.
+PLEASE USE OMP_NUM_THREADS WISELY.
+loading annotations into memory...
+Done (t=0.09s)
+creating index...
+index created!
+[08/02 02:42:47] ppdet.data.source.coco INFO: Load [928 samples valid, 0 samples invalid] in file dataset/ssdd_hbb/coco_style/annotations/train.json.
+W0802 02:42:47.413028 1051726 gpu_resources.cc:61] Please NOTE: device: 0, GPU Compute Capability: 7.5, Driver API Version: 11.7, Runtime API Version: 11.6
+W0802 02:42:47.420594 1051726 gpu_resources.cc:91] device: 0, cuDNN Version: 8.4.
+[08/02 02:42:50] ppdet.utils.checkpoint INFO: ['fc.bias', 'fc.weight', 'last_conv.weight'] in pretrained weight is not used in the model, and its will not be loaded
+[08/02 02:42:50] ppdet.utils.checkpoint INFO: Finish loading model weights: /root/.cache/paddle/weights/PPHGNetV2_X_ssld_pretrained.pdparams
+[08/02 02:42:51] ppdet.engine INFO: Epoch: [0] [  0/464] learning_rate: 0.000000 loss_class: 0.136636 loss_bbox: 0.820860 loss_giou: 2.275223 loss_class_aux: 1.158344 loss_bbox_aux: 3.916064 loss_giou_aux: 12.922530 loss_class_dn: 0.740401 loss_bbox_dn: 0.400231 loss_giou_dn: 1.414976 loss_class_aux_dn: 3.890860 loss_bbox_aux_dn: 2.001157 loss_giou_aux_dn: 7.074880 loss: 36.752159 eta: 11:54:46 batch_cost: 1.2837 data_cost: 0.0003 ips: 1.5580 images/s
+
+
+--------------------------------------
+C++ Traceback (most recent call last):
+--------------------------------------
+No stack trace in paddle, may be caused by external reasons.
+
+----------------------
+Error Message Summary:
+----------------------
+FatalError: `Termination signal` is detected by the operating system.
+  [TimeInfo: *** Aborted at 1690944227 (unix time) try "date -d @1690944227" if you are using GNU date ***]
+  [SignalInfo: *** SIGTERM (@0x100c01) received by PID 1051726 (TID 0x7f9f68f095c0) from PID 1051649 ***]
+

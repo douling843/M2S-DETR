@@ -1,0 +1,42 @@
+/opt/conda/envs/paddle_env/lib/python3.7/site-packages/pkg_resources/__init__.py:121: DeprecationWarning: pkg_resources is deprecated as an API
+  warnings.warn("pkg_resources is deprecated as an API", DeprecationWarning)
+/opt/conda/envs/paddle_env/lib/python3.7/site-packages/pkg_resources/__init__.py:2870: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('mpl_toolkits')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/opt/conda/envs/paddle_env/lib/python3.7/site-packages/pkg_resources/__init__.py:2870: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('google')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+/opt/conda/envs/paddle_env/lib/python3.7/site-packages/pkg_resources/__init__.py:2870: DeprecationWarning: Deprecated call to `pkg_resources.declare_namespace('zope')`.
+Implementing implicit namespace packages (as specified in PEP 420) is preferred to `pkg_resources.declare_namespace`. See https://setuptools.pypa.io/en/latest/references/keywords.html#keyword-namespace-packages
+  declare_namespace(pkg)
+WARNING: OMP_NUM_THREADS set to 32, not 1. The computation speed will not be optimized if you use data parallel. It will fail if this PaddlePaddle binary is compiled with OpenBlas since OpenBlas does not support multi-threads.
+PLEASE USE OMP_NUM_THREADS WISELY.
+loading annotations into memory...
+Done (t=0.09s)
+creating index...
+index created!
+[08/15 11:58:07] ppdet.data.source.coco INFO: Load [928 samples valid, 0 samples invalid] in file dataset/ssdd_hbb/coco_style/annotations/train.json.
+W0815 11:58:07.597275 1586945 gpu_resources.cc:61] Please NOTE: device: 0, GPU Compute Capability: 7.5, Driver API Version: 11.7, Runtime API Version: 11.6
+W0815 11:58:07.611487 1586945 gpu_resources.cc:91] device: 0, cuDNN Version: 8.4.
+
+
+--------------------------------------
+C++ Traceback (most recent call last):
+--------------------------------------
+0   paddle::imperative::Tracer::TraceOp(std::string const&, paddle::imperative::NameVarBaseMap const&, paddle::imperative::NameVarBaseMap const&, paddle::framework::AttributeMap, std::map<std::string, std::string, std::less<std::string >, std::allocator<std::pair<std::string const, std::string > > > const&)
+1   void paddle::imperative::Tracer::TraceOpImpl<paddle::imperative::VarBase>(std::string const&, paddle::imperative::details::NameVarMapTrait<paddle::imperative::VarBase>::Type const&, paddle::imperative::details::NameVarMapTrait<paddle::imperative::VarBase>::Type const&, paddle::framework::AttributeMap&, phi::Place const&, bool, std::map<std::string, std::string, std::less<std::string >, std::allocator<std::pair<std::string const, std::string > > > const&, paddle::framework::AttributeMap*, bool)
+2   paddle::imperative::PreparedOp::Run(paddle::imperative::NameVarBaseMap const&, paddle::imperative::NameVarBaseMap const&, paddle::framework::AttributeMap const&, paddle::framework::AttributeMap const&)
+3   void phi::MatmulKernel<float, phi::GPUContext>(phi::GPUContext const&, phi::DenseTensor const&, phi::DenseTensor const&, bool, bool, phi::DenseTensor*)
+4   void phi::MatMulFunction<phi::GPUContext, float>(phi::GPUContext const&, phi::DenseTensor const&, phi::DenseTensor const&, std::vector<long, std::allocator<long> > const&, std::vector<long, std::allocator<long> > const&, phi::DenseTensor*, bool, bool, bool)
+5   void phi::funcs::Blas<phi::GPUContext>::GEMM<float>(CBLAS_TRANSPOSE, CBLAS_TRANSPOSE, int, int, int, float, float const*, float const*, float, float*) const
+6   phi::GPUContext::CublasCall(std::function<void (cublasContext*)> const&) const
+7   phi::GPUContext::Impl::CublasCall(std::function<void (cublasContext*)> const&)::{lambda()#1}::operator()() const
+8   phi::InitBlasHandle(cublasContext**, CUstream_st*)
+
+----------------------
+Error Message Summary:
+----------------------
+FatalError: `Termination signal` is detected by the operating system.
+  [TimeInfo: *** Aborted at 1692100689 (unix time) try "date -d @1692100689" if you are using GNU date ***]
+  [SignalInfo: *** SIGTERM (@0x1836b3) received by PID 1586945 (TID 0x7efe755d85c0) from PID 1586867 ***]
+
