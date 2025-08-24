@@ -8,3 +8,7 @@
 👋  **M2S-DETR: A Mixed Receptive Field and Multi-Position Encoding for Scale-Sensitive SAR Ship Detection with Transformer**
 
 👨‍💻   **Code:** [GitHub](https://github.com/douling843/M2S-DETR/edit/main)
+
+
+
+## Installation  <img src="fig2/Installation.svg" width="4%">
